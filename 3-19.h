@@ -6,7 +6,7 @@
 #define MYCODECPP_3_19_H
 
 #endif //MYCODECPP_3_19_H
-#include <iostream>
+#include "base.h"
 #include <climits>
 
 namespace space319 {

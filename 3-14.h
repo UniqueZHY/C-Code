@@ -7,7 +7,7 @@
 
 #endif //MYCODECPP_3_14_H
 
-#include <iostream>
+#include "base.h"
 namespace space314 {
     const double * f1(const double * ar, int n) {
         return ar;

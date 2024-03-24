@@ -6,7 +6,7 @@
 #define MYCODECPP_3_12_H
 
 #endif //MYCODECPP_3_12_H
-#include<iostream>
+#include "base.h"
 
 namespace space312 {
     struct travel_time {

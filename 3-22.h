@@ -6,7 +6,7 @@
 #define MYCODECPP_3_22_H
 
 #endif //MYCODECPP_3_22_H
-#include <iostream>
+#include "base.h"
 #include <climits>
 
 namespace space322 {

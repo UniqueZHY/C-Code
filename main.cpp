@@ -12,7 +12,9 @@ int main() {
     space319::FuncDigitSize();
     space322::func();
     space324::hexoct();
-    space324::bondini();*/
-    space324::floatadd();
+    space324::bondini();
+    space324::signedusignedchar();
+    space324::typecase();*/
+    space324::funcGetGetline();
     return 0;
 }
