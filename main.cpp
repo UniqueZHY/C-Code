@@ -3,6 +3,7 @@
 #include "3-19.h"
 #include "3-22.h"
 #include "3-24.h"
+#include "3-25.h"
 int main() {
     /*space312::FuncString();
     space312::FuncArray();
@@ -14,7 +15,8 @@ int main() {
     space324::hexoct();
     space324::bondini();
     space324::signedusignedchar();
-    space324::typecase();*/
-    space324::funcGetGetline();
+    space324::typecase();
+    space324::funcGetGetline();*/
+    space325::funcStruct();
     return 0;
 }
