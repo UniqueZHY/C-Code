@@ -1,11 +1,4 @@
-#include "3-12.h"
-#include "3-14.h"
-#include "3-19.h"
-#include "3-22.h"
-#include "3-24.h"
-#include "3-25.h"
-#include "3-26.h"
-#include "3-27.h"
+#include "total.h"
 
 int main() {
     /*space312::FuncString();
@@ -21,7 +14,8 @@ int main() {
     space324::typecase();
     space324::funcGetGetline();
     space325::funcStruct();
-    space326::funcUnion();*/
-    space327::enumFunc();
+    space326::funcUnion();
+    space327::enumFunc();*/
+    space331::pointerplusfunc();
     return 0;
 }
