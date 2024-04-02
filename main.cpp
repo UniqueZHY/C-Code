@@ -15,7 +15,8 @@ int main() {
     space324::funcGetGetline();
     space325::funcStruct();
     space326::funcUnion();
-    space327::enumFunc();*/
-    space331::pointerplusfunc();
+    space327::enumFunc();
+    space331::pointerplusfunc();*/
+    space41::func();
     return 0;
 }
