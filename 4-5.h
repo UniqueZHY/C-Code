@@ -20,6 +20,15 @@ namespace space45 {
         b = temp;
     }
 
+    //函数模板重载，为了便于处理不同的情况
+    template <typename arrType>
+    void swap(arrType arr1[], arrType arr2[],  int size) {
+        for (int i = 0; i < size; ++i) {
+            arrType temp = arr1[i];
+            arr1[i] = arr2[i];
+            arr2[i] = temp;
+        }
+    }
     void mainfunction() {
         int a = 1;
         int b = 2;
@@ -30,5 +39,25 @@ namespace space45 {
         double d = 4;
         swap(c, d);
         std::cout << c << " " << d << std::endl;
+
+        int arr1[3] = {1,2,3};
+        int arr2[3] = {4,5,6};
+        swap(arr1, arr2, 3);
+        for (int i = 0; i < 3; ++i) {
+            std::cout << arr1[i] << std::endl;
+        }
+        for (int i = 0; i < 3; ++i) {
+            std::cout << arr2[i] << std::endl;
+        }
+        std::cout << "double arrary" << std::endl;
+        double arr3[3] = {7, 8, 9};
+        double arr4[3] = {10, 11, 12};
+        swap(arr3, arr4, 3);
+        for (int i = 0; i < 3; ++i) {
+            std::cout << arr3[i] << std::endl;
+        }
+        for (int i = 0; i < 3; ++i) {
+            std::cout << arr4[i] << std::endl;
+        }
     }
 }
