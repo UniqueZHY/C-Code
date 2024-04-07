@@ -19,7 +19,7 @@ namespace space45 {
         a = b;
         b = temp;
     }
-
+/*
     //函数模板重载，为了便于处理不同的情况
     template <typename arrType>
     void swap(arrType arr1[], arrType arr2[],  int size) {
@@ -29,7 +29,8 @@ namespace space45 {
             arr2[i] = temp;
         }
     }
-    void mainfunction() {
+
+    void subFunction() {
         int a = 1;
         int b = 2;
         swap(a, b);
@@ -59,5 +60,47 @@ namespace space45 {
         for (int i = 0; i < 3; ++i) {
             std::cout << arr4[i] << std::endl;
         }
+    }*/
+    struct job {
+        char name[10];
+        double salary;
+        int floor;
+    };
+    //显示实例化 语法swap<int>()
+    //template void swap<int> (int, int);->使用swap模板生成int类型的函数定义
+
+    //显示具体化
+    //template <> void swap<int>(int, int) 等价于 template <> void swap(int, int)
+    //不使用swap模版来生成函数定义，而应使用专门为int类型显示地定义的函数的定义
+
+    //显示具体化声明在关键字template后包含<>，而显示实例化没有
+
+    //swap函数的具像化
+    //该声明的意思时使用swap模板生成int类型的函数定义 不能单独使用 需要配合swap函数模版一起使用
+    template<> void swap<job>(job &a, job &b) {
+        double temp_salary = a.salary;
+        a.salary = b.salary;
+        b.salary = temp_salary;
+
+        int temp_floor = a.floor;
+        a.floor = b.floor;
+        b.floor = temp_floor;
+    }
+    void mainFunction() {
+        //subFunction();
+
+        int a = 1;
+        int b = 2;
+        //swap(a, b);
+
+        job job1 = {"name1", 1, 1};
+        job job2 = {"name2", 2, 2};
+        std::cout << job1.name << " " << job1.salary << " " << job1.floor << std::endl;
+        std::cout << job2.name << " " << job2.salary << " " << job2.floor << std::endl;
+        swap(job1, job2);
+
+        std::cout << job1.name << " " << job1.salary << " " << job1.floor << std::endl;
+        std::cout << job2.name << " " << job2.salary << " " << job2.floor << std::endl;
+
     }
 }

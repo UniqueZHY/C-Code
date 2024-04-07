@@ -19,6 +19,6 @@ int main() {
     space331::pointerplusfunc();
     space41::func();
     space44::mainfunc();*/
-    space45::mainfunction();
+    space45::mainFunction();
     return 0;
 }
