@@ -18,7 +18,8 @@ int main() {
     space327::enumFunc();
     space331::pointerplusfunc();
     space41::func();
-    space44::mainfunc();*/
-    space45::mainFunction();
+    space44::mainfunc();
+    space45::mainFunction();*/
+    space47::decltypeFunction();
     return 0;
 }

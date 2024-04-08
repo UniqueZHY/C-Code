@@ -10,6 +10,7 @@
 #include "base.h"
 
 namespace space47 {
+
     //decltype
     //decltpe 用于以下情况 无法确定 a + b 类型时 作为赋值表达式
     template<typename T1, typename T2>
@@ -23,6 +24,6 @@ namespace space47 {
         return a + b;
     }
     void decltypeFunction() {
-        template<class>
+        //template<class>
     }
 }
