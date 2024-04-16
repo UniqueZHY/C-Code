@@ -20,7 +20,8 @@ int main() {
     space41::func();
     space44::mainfunc();
     space45::mainFunction();
-    space47::decltypeFunction();*/
-    space414::stackFunc();
+    space47::decltypeFunction();
+    space414::stackFunc();*/
+    space416::objectTest();
     return 0;
 }
