@@ -36,7 +36,8 @@ namespace space416 {
     }
 
     void objectTest() {
-        
+        //实例
+        Struct s3;
         Struct * s1 = new Struct();
         s1->name = "zz";
         s1->age = 12;
