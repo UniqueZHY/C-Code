@@ -22,7 +22,8 @@ int main() {
     space45::mainFunction();
     space47::decltypeFunction();
     space414::stackFunc();
-    space416::objectTest();*/
-    space417::operatorfunc();
+    space416::objectTest();
+    space417::operatorfunc();*/
+    space59::testThread();
     return 0;
 }
