@@ -23,7 +23,9 @@ int main() {
     space47::decltypeFunction();
     space414::stackFunc();
     space416::objectTest();
-    space417::operatorfunc();*/
-    space59::testThread();
+    space417::operatorfunc();
+    space59::testThread();*/
+    space510::Ccharfunction();
+    space510::leftrightmove();
     return 0;
 }
